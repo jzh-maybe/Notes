@@ -33,28 +33,28 @@ public class MyTest2 {
   使用`javap -verbose'命令可以输出完整的字节码反编译信息
   ```
   H:\workspace-IDEA\JavaEE\out\production\JavaBase>javap -verbose com.hugeyurt.jvm.bytecode.MyTest2
-Classfile /H:/workspace-IDEA/JavaEE/out/production/JavaBase/com/hugeyurt/jvm/bytecode/MyTest2.class
-  Last modified 2020-2-12; size 848 bytes
-  MD5 checksum 3b69aa97d8201382d2b26561da60bd89
-  Compiled from "MyTest2.java"
-public class com.hugeyurt.jvm.bytecode.MyTest2
-  minor version: 0
-  major version: 52
-  flags: ACC_PUBLIC, ACC_SUPER
-Constant pool:
-   #1 = Methodref          #10.#34        // java/lang/Object."<init>":()V
-   #2 = String             #35            // Welcome
-   #3 = Fieldref           #5.#36         // com/hugeyurt/jvm/bytecode/MyTest2.str:Ljava/lang/String;
-   #4 = Fieldref           #5.#37         // com/hugeyurt/jvm/bytecode/MyTest2.x:I
-   #5 = Class              #38            // com/hugeyurt/jvm/bytecode/MyTest2
-   #6 = Methodref          #5.#34         // com/hugeyurt/jvm/bytecode/MyTest2."<init>":()V
-   #7 = Methodref          #5.#39         // com/hugeyurt/jvm/bytecode/MyTest2.setX:(I)V
-   #8 = Methodref          #40.#41        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-   #9 = Fieldref           #5.#42         // com/hugeyurt/jvm/bytecode/MyTest2.in:Ljava/lang/Integer;
-  #10 = Class              #43            // java/lang/Object
-  #11 = Utf8               str
-  #12 = Utf8               Ljava/lang/String;
-  #13 = Utf8               x
+  Classfile /H:/workspace-IDEA/JavaEE/out/production/JavaBase/com/hugeyurt/jvm/bytecode/MyTest2.class
+    Last modified 2020-2-12; size 848 bytes
+    MD5 checksum 3b69aa97d8201382d2b26561da60bd89
+    Compiled from "MyTest2.java"
+  public class com.hugeyurt.jvm.bytecode.MyTest2
+    minor version: 0
+    major version: 52
+    flags: ACC_PUBLIC, ACC_SUPER
+  Constant pool:
+     #1 = Methodref          #10.#34        // java/lang/Object."<init>":()V
+     #2 = String             #35            // Welcome
+     #3 = Fieldref           #5.#36         // com/hugeyurt/jvm/bytecode/MyTest2.str:Ljava/lang/String;
+     #4 = Fieldref           #5.#37         // com/hugeyurt/jvm/bytecode/MyTest2.x:I
+     #5 = Class              #38            // com/hugeyurt/jvm/bytecode/MyTest2
+     #6 = Methodref          #5.#34         // com/hugeyurt/jvm/bytecode/MyTest2."<init>":()V
+     #7 = Methodref          #5.#39         // com/hugeyurt/jvm/bytecode/MyTest2.setX:(I)V
+     #8 = Methodref          #40.#41        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     #9 = Fieldref           #5.#42         // com/hugeyurt/jvm/bytecode/MyTest2.in:Ljava/lang/Integer;
+    #10 = Class              #43            // java/lang/Object
+    #11 = Utf8               str
+    #12 = Utf8               Ljava/lang/String;
+    #13 = Utf8               x
   #14 = Utf8               I
   #15 = Utf8               in
   #16 = Utf8               Ljava/lang/Integer;
