@@ -31,5 +31,4 @@ public class MyTest2 {
   javap -c com.hugeyurt.jvm.bytecode.MyTset2
   ```
   使用`javap -verbose'命令可以输出完整的字节码反编译信息
-  ```
   
