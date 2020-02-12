@@ -24,6 +24,9 @@ public class MyTest2 {
 - 在IDEA中，首先通过Build->Build Project，默认在Java项目根目录下编译生成.class文件；
 - 在IDEA - Terminal中使用`javap`命令对.class文件进行反编译
   ```
-  javap com.hugeyurt.jvm.bytecode.MyTest
+  javap com.hugeyurt.jvm.bytecode.MyTest2
   ```
-  使用`javap -c`命令可以打印出包括
+  使用`javap -c`命令可以打印出包括助记符在内的更为详细的信息
+  ```
+  javap -c com.hugeyurt.jvm.bytecode.MyTset2
+  
