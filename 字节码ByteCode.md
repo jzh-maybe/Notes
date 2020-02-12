@@ -22,4 +22,4 @@ public class MyTest2 {
 ```
 ### 1. 编译和反编译
 - 在IDEA中，首先通过Build->Build Project，默认在Java项目根目录下编译生成.class文件；
-- 
+- 在IDEA - Terminal中使用
