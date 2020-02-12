@@ -32,7 +32,7 @@ public class MyTest2 {
   ```
   使用`javap -verbose'命令可以输出完整的字节码反编译信息
   ```
-H:\workspace-IDEA\JavaEE\out\production\JavaBase>javap -verbose com.hugeyurt.jvm.bytecode.MyTest2
+  H:\workspace-IDEA\JavaEE\out\production\JavaBase>javap -verbose com.hugeyurt.jvm.bytecode.MyTest2
 Classfile /H:/workspace-IDEA/JavaEE/out/production/JavaBase/com/hugeyurt/jvm/bytecode/MyTest2.class
   Last modified 2020-2-12; size 848 bytes
   MD5 checksum 3b69aa97d8201382d2b26561da60bd89
@@ -88,93 +88,4 @@ Constant pool:
   #44 = Utf8               java/lang/Integer
   #45 = Utf8               valueOf
   #46 = Utf8               (I)Ljava/lang/Integer;
-{
-  java.lang.String str;
-    descriptor: Ljava/lang/String;
-    flags:
 
-  public static java.lang.Integer in;
-    descriptor: Ljava/lang/Integer;
-    flags: ACC_PUBLIC, ACC_STATIC
-
-  public com.hugeyurt.jvm.bytecode.MyTest2();
-    descriptor: ()V
-    flags: ACC_PUBLIC
-    Code:
-      stack=2, locals=1, args_size=1
-         0: aload_0
-         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
-         4: aload_0
-         5: ldc           #2                  // String Welcome
-         7: putfield      #3                  // Field str:Ljava/lang/String;
-        10: aload_0
-        11: iconst_5
-        12: putfield      #4                  // Field x:I
-        15: return
-      LineNumberTable:
-        line 3: 0
-        line 4: 4
-        line 5: 10
-      LocalVariableTable:
-        Start  Length  Slot  Name   Signature
-            0      16     0  this   Lcom/hugeyurt/jvm/bytecode/MyTest2;
-
-  public static void main(java.lang.String[]);
-    descriptor: ([Ljava/lang/String;)V
-    flags: ACC_PUBLIC, ACC_STATIC
-    Code:
-      stack=2, locals=2, args_size=1
-         0: new           #5                  // class com/hugeyurt/jvm/bytecode/MyTest2
-         3: dup
-         4: invokespecial #6                  // Method "<init>":()V
-         7: astore_1
-         8: aload_1
-         9: bipush        8
-        11: invokevirtual #7                  // Method setX:(I)V
-        14: bipush        20
-        16: invokestatic  #8                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-        19: putstatic     #9                  // Field in:Ljava/lang/Integer;
-        22: return
-      LineNumberTable:
-        line 9: 0
-        line 10: 8
-        line 11: 14
-        line 12: 22
-      LocalVariableTable:
-        Start  Length  Slot  Name   Signature
-            0      23     0  args   [Ljava/lang/String;
-            8      15     1 myTest2   Lcom/hugeyurt/jvm/bytecode/MyTest2;
-
-  public void setX(int);
-    descriptor: (I)V
-    flags: ACC_PUBLIC
-    Code:
-      stack=2, locals=2, args_size=2
-         0: aload_0
-         1: iload_1
-         2: putfield      #4                  // Field x:I
-         5: return
-      LineNumberTable:
-        line 15: 0
-        line 16: 5
-      LocalVariableTable:
-        Start  Length  Slot  Name   Signature
-            0       6     0  this   Lcom/hugeyurt/jvm/bytecode/MyTest2;
-            0       6     1     x   I
-
-  static {};
-    descriptor: ()V
-    flags: ACC_STATIC
-    Code:
-      stack=1, locals=0, args_size=0
-         0: iconst_5
-         1: invokestatic  #8                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-         4: putstatic     #9                  // Field in:Ljava/lang/Integer;
-         7: return
-      LineNumberTable:
-        line 6: 0
-}
-SourceFile: "MyTest2.java"
-
-
-```
