@@ -89,3 +89,4 @@ public class MyTest2 {
     #45 = Utf8               valueOf
     #46 = Utf8               (I)Ljava/lang/Integer;
   ```
+### 2. 使用十六进制编辑器WinHex打开此Class文件
