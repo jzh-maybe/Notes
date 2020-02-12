@@ -32,7 +32,7 @@ public class MyTest2 {
   ```
   使用`javap -verbose'命令可以输出完整的字节码反编译信息
   ```
-  H:\workspace-IDEA\JavaEE\out\production\JavaBase>javap -verbose com.hugeyurt.jvm.bytecode.MyTest2
+H:\workspace-IDEA\JavaEE\out\production\JavaBase>javap -verbose com.hugeyurt.jvm.bytecode.MyTest2
 Classfile /H:/workspace-IDEA/JavaEE/out/production/JavaBase/com/hugeyurt/jvm/bytecode/MyTest2.class
   Last modified 2020-2-12; size 848 bytes
   MD5 checksum 3b69aa97d8201382d2b26561da60bd89
@@ -156,24 +156,25 @@ Constant pool:
          5: return
       LineNumberTable:
         line 15: 0
-        line 16: 5  
+        line 16: 5
       LocalVariableTable:
         Start  Length  Slot  Name   Signature
             0       6     0  this   Lcom/hugeyurt/jvm/bytecode/MyTest2;
             0       6     1     x   I
 
-    static {};
-      descriptor: ()V
-      flags: ACC_STATIC
-      Code:
-        stack=1, locals=0, args_size=0
-           0: iconst_5
-           1: invokestatic  #8                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
-           4: putstatic     #9                  // Field in:Ljava/lang/Integer;
-           7: return
-        LineNumberTable:
-          line 6: 0
-  }
-  SourceFile: "MyTest2.java"
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_5
+         1: invokestatic  #8                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+         4: putstatic     #9                  // Field in:Ljava/lang/Integer;
+         7: return
+      LineNumberTable:
+        line 6: 0
+}
+SourceFile: "MyTest2.java"
+
 
 ```
