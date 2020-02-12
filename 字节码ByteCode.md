@@ -29,4 +29,5 @@ public class MyTest2 {
   使用`javap -c`命令可以打印出包括助记符在内的更为详细的信息
   ```
   javap -c com.hugeyurt.jvm.bytecode.MyTset2
-  
+  ```
+  使用`javap -verbose'命令可以输出完整的反编译
