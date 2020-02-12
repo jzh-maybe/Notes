@@ -96,3 +96,4 @@ public class MyTest2 {
 每个Class文件的头4个字节称为魔数(Magic Number)，它的唯一作用是确定这个文件是否为一个能被虚拟机接受的Class文件，值为0xCAFEBABE
 
 #### （2）版本号 minor_version&major_version
+紧接着魔数的4个字节存储的是Class文件的版本号，第5和第6个字节是次版本号(minor_version)，第7和
