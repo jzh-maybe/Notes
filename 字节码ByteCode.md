@@ -93,3 +93,4 @@ public class MyTest2 {
 ![批注 20200212 140419.jpg](0)
 ### 3. 字节码分析
 （1）魔数Magic
+每个Class文件的头4个字节称为魔数(Magic Number)，它的唯一作用是确定
