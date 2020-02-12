@@ -31,4 +31,149 @@ public class MyTest2 {
   javap -c com.hugeyurt.jvm.bytecode.MyTset2
   ```
   使用`javap -verbose'命令可以输出完整的字节码反编译信息
-  
+  ```
+  H:\workspace-IDEA\JavaEE\out\production\JavaBase>javap -verbose com.hugeyurt.jvm.bytecode.MyTest2
+Classfile /H:/workspace-IDEA/JavaEE/out/production/JavaBase/com/hugeyurt/jvm/bytecode/MyTest2.class
+  Last modified 2020-2-12; size 848 bytes
+  MD5 checksum 3b69aa97d8201382d2b26561da60bd89
+  Compiled from "MyTest2.java"
+public class com.hugeyurt.jvm.bytecode.MyTest2
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #10.#34        // java/lang/Object."<init>":()V
+   #2 = String             #35            // Welcome
+   #3 = Fieldref           #5.#36         // com/hugeyurt/jvm/bytecode/MyTest2.str:Ljava/lang/String;
+   #4 = Fieldref           #5.#37         // com/hugeyurt/jvm/bytecode/MyTest2.x:I
+   #5 = Class              #38            // com/hugeyurt/jvm/bytecode/MyTest2
+   #6 = Methodref          #5.#34         // com/hugeyurt/jvm/bytecode/MyTest2."<init>":()V
+   #7 = Methodref          #5.#39         // com/hugeyurt/jvm/bytecode/MyTest2.setX:(I)V
+   #8 = Methodref          #40.#41        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #9 = Fieldref           #5.#42         // com/hugeyurt/jvm/bytecode/MyTest2.in:Ljava/lang/Integer;
+  #10 = Class              #43            // java/lang/Object
+  #11 = Utf8               str
+  #12 = Utf8               Ljava/lang/String;
+  #13 = Utf8               x
+  #14 = Utf8               I
+  #15 = Utf8               in
+  #16 = Utf8               Ljava/lang/Integer;
+  #17 = Utf8               <init>
+  #18 = Utf8               ()V
+  #19 = Utf8               Code
+  #20 = Utf8               LineNumberTable
+  #21 = Utf8               LocalVariableTable
+  #22 = Utf8               this
+  #23 = Utf8               Lcom/hugeyurt/jvm/bytecode/MyTest2;
+  #24 = Utf8               main
+  #25 = Utf8               ([Ljava/lang/String;)V
+  #26 = Utf8               args
+  #27 = Utf8               [Ljava/lang/String;
+  #28 = Utf8               myTest2
+  #29 = Utf8               setX
+  #30 = Utf8               (I)V
+  #31 = Utf8               <clinit>
+  #32 = Utf8               SourceFile
+  #33 = Utf8               MyTest2.java
+  #34 = NameAndType        #17:#18        // "<init>":()V
+  #35 = Utf8               Welcome
+  #36 = NameAndType        #11:#12        // str:Ljava/lang/String;
+  #37 = NameAndType        #13:#14        // x:I
+  #38 = Utf8               com/hugeyurt/jvm/bytecode/MyTest2
+  #39 = NameAndType        #29:#30        // setX:(I)V
+  #40 = Class              #44            // java/lang/Integer
+  #41 = NameAndType        #45:#46        // valueOf:(I)Ljava/lang/Integer;
+  #42 = NameAndType        #15:#16        // in:Ljava/lang/Integer;
+  #43 = Utf8               java/lang/Object
+  #44 = Utf8               java/lang/Integer
+  #45 = Utf8               valueOf
+  #46 = Utf8               (I)Ljava/lang/Integer;
+{
+  java.lang.String str;
+    descriptor: Ljava/lang/String;
+    flags:
+
+  public static java.lang.Integer in;
+    descriptor: Ljava/lang/Integer;
+    flags: ACC_PUBLIC, ACC_STATIC
+
+  public com.hugeyurt.jvm.bytecode.MyTest2();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: ldc           #2                  // String Welcome
+         7: putfield      #3                  // Field str:Ljava/lang/String;
+        10: aload_0
+        11: iconst_5
+        12: putfield      #4                  // Field x:I
+        15: return
+      LineNumberTable:
+        line 3: 0
+        line 4: 4
+        line 5: 10
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      16     0  this   Lcom/hugeyurt/jvm/bytecode/MyTest2;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #5                  // class com/hugeyurt/jvm/bytecode/MyTest2
+         3: dup
+         4: invokespecial #6                  // Method "<init>":()V
+         7: astore_1
+         8: aload_1
+         9: bipush        8
+        11: invokevirtual #7                  // Method setX:(I)V
+        14: bipush        20
+        16: invokestatic  #8                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        19: putstatic     #9                  // Field in:Ljava/lang/Integer;
+        22: return
+      LineNumberTable:
+        line 9: 0
+        line 10: 8
+        line 11: 14
+        line 12: 22
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      23     0  args   [Ljava/lang/String;
+            8      15     1 myTest2   Lcom/hugeyurt/jvm/bytecode/MyTest2;
+
+  public void setX(int);
+    descriptor: (I)V
+    flags: ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #4                  // Field x:I
+         5: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 5  
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       6     0  this   Lcom/hugeyurt/jvm/bytecode/MyTest2;
+            0       6     1     x   I
+
+    static {};
+      descriptor: ()V
+      flags: ACC_STATIC
+      Code:
+        stack=1, locals=0, args_size=0
+           0: iconst_5
+           1: invokestatic  #8                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+           4: putstatic     #9                  // Field in:Ljava/lang/Integer;
+           7: return
+        LineNumberTable:
+          line 6: 0
+  }
+  SourceFile: "MyTest2.java"
+
+```
