@@ -55,15 +55,15 @@ public class MyTest2 {
     #11 = Utf8               str
     #12 = Utf8               Ljava/lang/String;
     #13 = Utf8               x
-  #14 = Utf8               I
-  #15 = Utf8               in
-  #16 = Utf8               Ljava/lang/Integer;
-  #17 = Utf8               <init>
-  #18 = Utf8               ()V
-  #19 = Utf8               Code
-  #20 = Utf8               LineNumberTable
-  #21 = Utf8               LocalVariableTable
-  #22 = Utf8               this
+    #14 = Utf8               I
+    #15 = Utf8               in
+    #16 = Utf8               Ljava/lang/Integer;
+    #17 = Utf8               <init>
+    #18 = Utf8               ()V
+    #19 = Utf8               Code
+    #20 = Utf8               LineNumberTable
+    #21 = Utf8               LocalVariableTable
+    #22 = Utf8               this
   #23 = Utf8               Lcom/hugeyurt/jvm/bytecode/MyTest2;
   #24 = Utf8               main
   #25 = Utf8               ([Ljava/lang/String;)V
@@ -88,4 +88,4 @@ public class MyTest2 {
   #44 = Utf8               java/lang/Integer
   #45 = Utf8               valueOf
   #46 = Utf8               (I)Ljava/lang/Integer;
-
+  ```
