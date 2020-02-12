@@ -21,6 +21,6 @@ public class MyTest2 {
 }
 ```
 ### 1. 反编译
-```language
-
+```
+H:\workspace-IDEA\JavaEE\out\production\JavaBase>javap -verbose com.hugeyurt.jvm.bytecode.MyTest2
 ```
