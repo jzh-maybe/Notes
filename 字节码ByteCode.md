@@ -90,3 +90,4 @@ public class MyTest2 {
     #46 = Utf8               (I)Ljava/lang/Integer;
   ```
 ### 2. 使用十六进制编辑器WinHex打开此Class文件
+![批注 20200212 140419.jpg](0)
