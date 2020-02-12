@@ -92,5 +92,6 @@ public class MyTest2 {
 ### 2. 使用十六进制编辑器WinHex打开此Class文件
 ![批注 20200212 140419.jpg](0)
 ### 3. 字节码分析
-（1）魔数Magic
-每个Class文件的头4个字节称为魔数(Magic Number)，它的唯一作用是确定这个文件是否为一个能被虚拟机接受的Class文件
+（1）魔数 Magic
+每个Class文件的头4个字节称为魔数(Magic Number)，它的唯一作用是确定这个文件是否为一个能被虚拟机接受的Class文件，值为0xCAFEBABE
+（2）版本号 minor_version&major_version
