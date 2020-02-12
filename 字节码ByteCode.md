@@ -20,7 +20,8 @@ public class MyTest2 {
     }
 }
 ```
-### 1. 反编译
+### 1. 编译和反编译
+- 在IDEA中，首先通过Build->Bui
 ```
 H:\workspace-IDEA\JavaEE\out\production\JavaBase>javap -verbose com.hugeyurt.jvm.bytecode.MyTest2
 ```
