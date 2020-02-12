@@ -1,5 +1,5 @@
 # 字节码 ByteCode
-## Class类文件的结构
+## 二、Class类文件的结构
 以下面这段程序使用JDK1.8编译生成的Class文件进行分析。
 ```
 package com.hugeyurt.jvm.bytecode;
